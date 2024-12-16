@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A219CCCE2D0B062F008482FE /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCCD2D0B062F008482FE /* MainMenuViewController.swift */; };
+		A219CCDE2D0B08CD008482FE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCDD2D0B08CD008482FE /* AuthViewController.swift */; };
+		A219CCE02D0B08F4008482FE /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCDF2D0B08F4008482FE /* AuthInteractor.swift */; };
+		A219CCE22D0B0904008482FE /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCE12D0B0904008482FE /* AuthPresenter.swift */; };
+		A219CCE42D0B091D008482FE /* AuthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCE32D0B091D008482FE /* AuthConfigurator.swift */; };
+		A219CCE82D0B0953008482FE /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCE72D0B0953008482FE /* LocalViewController.swift */; };
+		A219CCEA2D0B0995008482FE /* LocalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCE92D0B0995008482FE /* LocalInteractor.swift */; };
+		A219CCEC2D0B09A7008482FE /* LocalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCEB2D0B09A7008482FE /* LocalPresenter.swift */; };
+		A219CCEE2D0B09BA008482FE /* LocalConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219CCED2D0B09BA008482FE /* LocalConfigurator.swift */; };
+		A2A05A122D0B15FD003AFF34 /* RegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A112D0B15FD003AFF34 /* RegularButton.swift */; };
+		A2A05A142D0B1C90003AFF34 /* RGBColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A132D0B1C90003AFF34 /* RGBColors.swift */; };
+		A2A05A1B2D0B40C9003AFF34 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A1A2D0B40C9003AFF34 /* GameViewController.swift */; };
+		A2A05A1D2D0B40F3003AFF34 /* GameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A1C2D0B40F3003AFF34 /* GameInteractor.swift */; };
+		A2A05A1F2D0B4102003AFF34 /* GamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A1E2D0B4102003AFF34 /* GamePresenter.swift */; };
+		A2A05A232D0B4134003AFF34 /* GameConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A222D0B4134003AFF34 /* GameConfigurator.swift */; };
+		A2A05A252D0B43E8003AFF34 /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A242D0B43E7003AFF34 /* CustomKeyboard.swift */; };
+		A2A05A272D0B44CD003AFF34 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A262D0B44CD003AFF34 /* KeyboardButton.swift */; };
+		A2A05A292D0B4A45003AFF34 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A282D0B4A45003AFF34 /* Protocols.swift */; };
+		A2A05A2B2D0C4730003AFF34 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A2A2D0C4730003AFF34 /* GameModels.swift */; };
+		A2A05A2E2D0C4834003AFF34 /* MathLogicWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A2D2D0C4834003AFF34 /* MathLogicWorker.swift */; };
+		A2A05A322D0DBF4D003AFF34 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A312D0DBF4D003AFF34 /* CustomTextField.swift */; };
+		A2A05A352D0DC95B003AFF34 /* PlayerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A342D0DC95B003AFF34 /* PlayerInfo.swift */; };
+		A2A05A372D0DC99C003AFF34 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A362D0DC99C003AFF34 /* UserDefaultsStorage.swift */; };
+		A2A05A392D0DCDBD003AFF34 /* LocalStorageSaveWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A05A382D0DCDBD003AFF34 /* LocalStorageSaveWorker.swift */; };
+		A2A5B17E2D09FB200058FD0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5B17D2D09FB200058FD0C /* AppDelegate.swift */; };
+		A2A5B1802D09FB200058FD0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5B17F2D09FB200058FD0C /* SceneDelegate.swift */; };
+		A2A5B1872D09FB210058FD0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A5B1862D09FB210058FD0C /* Assets.xcassets */; };
+		A2D0E2F92D0DE453006C9107 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2D0E2F82D0DE453006C9107 /* GoogleService-Info.plist */; };
+		A2D0E2FD2D0DE568006C9107 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A2D0E2FC2D0DE568006C9107 /* FirebaseAuth */; };
+		A2D0E2FF2D0DE568006C9107 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A2D0E2FE2D0DE568006C9107 /* FirebaseCore */; };
+		A2D0E3012D0DE568006C9107 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A2D0E3002D0DE568006C9107 /* FirebaseDatabase */; };
+		A2D0E3032D0DE568006C9107 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A2D0E3022D0DE568006C9107 /* FirebaseFirestore */; };
+		A2D0E3052D0DE568006C9107 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A2D0E3042D0DE568006C9107 /* FirebaseStorage */; };
+		A2D0E3072D0DEA7F006C9107 /* FirebaseAccountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3062D0DEA7F006C9107 /* FirebaseAccountWorker.swift */; };
+		A2D0E3092D0DEB4F006C9107 /* UserDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3082D0DEB4F006C9107 /* UserDataStruct.swift */; };
+		A2D0E30B2D0DFAE6006C9107 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E30A2D0DFAE6006C9107 /* AuthModels.swift */; };
+		A2D0E30D2D0F1AAB006C9107 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E30C2D0F1AAB006C9107 /* UserSession.swift */; };
+		A2D0E3122D0F2E0F006C9107 /* LeaderboardsChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3112D0F2E0F006C9107 /* LeaderboardsChooseViewController.swift */; };
+		A2D0E3142D0F30ED006C9107 /* FirebaseSaveScoreWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3132D0F30ED006C9107 /* FirebaseSaveScoreWorker.swift */; };
+		A2D0E3162D0F6203006C9107 /* LocalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3152D0F6203006C9107 /* LocalCell.swift */; };
+		A2D0E3182D0F669C006C9107 /* LocalStorageFetchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3172D0F669C006C9107 /* LocalStorageFetchWorker.swift */; };
+		A2D0E31A2D0F6B89006C9107 /* LocalStorageDeleteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3192D0F6B89006C9107 /* LocalStorageDeleteWorker.swift */; };
+		A2D0E31D2D0F9156006C9107 /* GlobalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E31C2D0F9156006C9107 /* GlobalViewController.swift */; };
+		A2D0E31F2D0F9168006C9107 /* GlobalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E31E2D0F9168006C9107 /* GlobalInteractor.swift */; };
+		A2D0E3212D0F922E006C9107 /* GlobalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3202D0F922E006C9107 /* GlobalPresenter.swift */; };
+		A2D0E3232D0F9244006C9107 /* GlobalConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3222D0F9244006C9107 /* GlobalConfigurator.swift */; };
+		A2D0E3252D0F9259006C9107 /* GlobalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3242D0F9259006C9107 /* GlobalCell.swift */; };
+		A2D0E3282D0F9274006C9107 /* FirebaseFetchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3272D0F9274006C9107 /* FirebaseFetchWorker.swift */; };
+		A2D0E32A2D0F9C92006C9107 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3292D0F9C92006C9107 /* GlobalModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A219CCCD2D0B062F008482FE /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		A219CCDD2D0B08CD008482FE /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		A219CCDF2D0B08F4008482FE /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		A219CCE12D0B0904008482FE /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		A219CCE32D0B091D008482FE /* AuthConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfigurator.swift; sourceTree = "<group>"; };
+		A219CCE72D0B0953008482FE /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
+		A219CCE92D0B0995008482FE /* LocalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalInteractor.swift; sourceTree = "<group>"; };
+		A219CCEB2D0B09A7008482FE /* LocalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPresenter.swift; sourceTree = "<group>"; };
+		A219CCED2D0B09BA008482FE /* LocalConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConfigurator.swift; sourceTree = "<group>"; };
+		A2A05A112D0B15FD003AFF34 /* RegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularButton.swift; sourceTree = "<group>"; };
+		A2A05A132D0B1C90003AFF34 /* RGBColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColors.swift; sourceTree = "<group>"; };
+		A2A05A1A2D0B40C9003AFF34 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		A2A05A1C2D0B40F3003AFF34 /* GameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInteractor.swift; sourceTree = "<group>"; };
+		A2A05A1E2D0B4102003AFF34 /* GamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePresenter.swift; sourceTree = "<group>"; };
+		A2A05A222D0B4134003AFF34 /* GameConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfigurator.swift; sourceTree = "<group>"; };
+		A2A05A242D0B43E7003AFF34 /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
+		A2A05A262D0B44CD003AFF34 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		A2A05A282D0B4A45003AFF34 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		A2A05A2A2D0C4730003AFF34 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		A2A05A2D2D0C4834003AFF34 /* MathLogicWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathLogicWorker.swift; sourceTree = "<group>"; };
+		A2A05A312D0DBF4D003AFF34 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A2A05A342D0DC95B003AFF34 /* PlayerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfo.swift; sourceTree = "<group>"; };
+		A2A05A362D0DC99C003AFF34 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		A2A05A382D0DCDBD003AFF34 /* LocalStorageSaveWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageSaveWorker.swift; sourceTree = "<group>"; };
+		A2A5B17A2D09FB200058FD0C /* QuickMathApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickMathApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A5B17D2D09FB200058FD0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2A5B17F2D09FB200058FD0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A2A5B1862D09FB210058FD0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2A5B18B2D09FB210058FD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D0E2F82D0DE453006C9107 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2D0E3062D0DEA7F006C9107 /* FirebaseAccountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAccountWorker.swift; sourceTree = "<group>"; };
+		A2D0E3082D0DEB4F006C9107 /* UserDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStruct.swift; sourceTree = "<group>"; };
+		A2D0E30A2D0DFAE6006C9107 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		A2D0E30C2D0F1AAB006C9107 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		A2D0E3112D0F2E0F006C9107 /* LeaderboardsChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardsChooseViewController.swift; sourceTree = "<group>"; };
+		A2D0E3132D0F30ED006C9107 /* FirebaseSaveScoreWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSaveScoreWorker.swift; sourceTree = "<group>"; };
+		A2D0E3152D0F6203006C9107 /* LocalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCell.swift; sourceTree = "<group>"; };
+		A2D0E3172D0F669C006C9107 /* LocalStorageFetchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageFetchWorker.swift; sourceTree = "<group>"; };
+		A2D0E3192D0F6B89006C9107 /* LocalStorageDeleteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageDeleteWorker.swift; sourceTree = "<group>"; };
+		A2D0E31C2D0F9156006C9107 /* GlobalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalViewController.swift; sourceTree = "<group>"; };
+		A2D0E31E2D0F9168006C9107 /* GlobalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalInteractor.swift; sourceTree = "<group>"; };
+		A2D0E3202D0F922E006C9107 /* GlobalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPresenter.swift; sourceTree = "<group>"; };
+		A2D0E3222D0F9244006C9107 /* GlobalConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConfigurator.swift; sourceTree = "<group>"; };
+		A2D0E3242D0F9259006C9107 /* GlobalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCell.swift; sourceTree = "<group>"; };
+		A2D0E3272D0F9274006C9107 /* FirebaseFetchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFetchWorker.swift; sourceTree = "<group>"; };
+		A2D0E3292D0F9C92006C9107 /* GlobalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2A5B1772D09FB200058FD0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D0E3012D0DE568006C9107 /* FirebaseDatabase in Frameworks */,
+				A2D0E3032D0DE568006C9107 /* FirebaseFirestore in Frameworks */,
+				A2D0E2FF2D0DE568006C9107 /* FirebaseCore in Frameworks */,
+				A2D0E3052D0DE568006C9107 /* FirebaseStorage in Frameworks */,
+				A2D0E2FD2D0DE568006C9107 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A219CCCB2D0B0517008482FE /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				A2A05A332D0DC532003AFF34 /* Storage */,
+				A2A05A102D0B15E6003AFF34 /* Views */,
+				A2D0E30C2D0F1AAB006C9107 /* UserSession.swift */,
+				A2A05A282D0B4A45003AFF34 /* Protocols.swift */,
+				A2A05A132D0B1C90003AFF34 /* RGBColors.swift */,
+				A2A5B17F2D09FB200058FD0C /* SceneDelegate.swift */,
+				A2A5B17D2D09FB200058FD0C /* AppDelegate.swift */,
+				A2D0E2F82D0DE453006C9107 /* GoogleService-Info.plist */,
+				A2A5B18B2D09FB210058FD0C /* Info.plist */,
+				A2A5B1862D09FB210058FD0C /* Assets.xcassets */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		A219CCCC2D0B0532008482FE /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A219CCCD2D0B062F008482FE /* MainMenuViewController.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		A219CCD12D0B072F008482FE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A219CCCC2D0B0532008482FE /* MainMenu */,
+				A219CCDB2D0B0831008482FE /* AuthenticationScreen */,
+				A2A05A192D0B4092003AFF34 /* GameScreen */,
+				A2D0E3102D0F2D97006C9107 /* Leaderboards */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A219CCDA2D0B07C9008482FE /* LocalLeaderboards */ = {
+			isa = PBXGroup;
+			children = (
+				A219CCE72D0B0953008482FE /* LocalViewController.swift */,
+				A219CCE92D0B0995008482FE /* LocalInteractor.swift */,
+				A219CCEB2D0B09A7008482FE /* LocalPresenter.swift */,
+				A219CCED2D0B09BA008482FE /* LocalConfigurator.swift */,
+				A2D0E3152D0F6203006C9107 /* LocalCell.swift */,
+				A2A05A3B2D0DD3D0003AFF34 /* Workers */,
+			);
+			path = LocalLeaderboards;
+			sourceTree = "<group>";
+		};
+		A219CCDB2D0B0831008482FE /* AuthenticationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A219CCDD2D0B08CD008482FE /* AuthViewController.swift */,
+				A219CCDF2D0B08F4008482FE /* AuthInteractor.swift */,
+				A219CCE12D0B0904008482FE /* AuthPresenter.swift */,
+				A219CCE32D0B091D008482FE /* AuthConfigurator.swift */,
+				A2D0E30A2D0DFAE6006C9107 /* AuthModels.swift */,
+				A2A05A3A2D0DD3C9003AFF34 /* Workers */,
+			);
+			path = AuthenticationScreen;
+			sourceTree = "<group>";
+		};
+		A2A05A102D0B15E6003AFF34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2A05A312D0DBF4D003AFF34 /* CustomTextField.swift */,
+				A2A05A112D0B15FD003AFF34 /* RegularButton.swift */,
+				A2A05A262D0B44CD003AFF34 /* KeyboardButton.swift */,
+				A2A05A242D0B43E7003AFF34 /* CustomKeyboard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2A05A192D0B4092003AFF34 /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A2A05A1A2D0B40C9003AFF34 /* GameViewController.swift */,
+				A2A05A1C2D0B40F3003AFF34 /* GameInteractor.swift */,
+				A2A05A1E2D0B4102003AFF34 /* GamePresenter.swift */,
+				A2A05A222D0B4134003AFF34 /* GameConfigurator.swift */,
+				A2A05A2A2D0C4730003AFF34 /* GameModels.swift */,
+				A2A05A2C2D0C47DB003AFF34 /* Workers */,
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		A2A05A2C2D0C47DB003AFF34 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				A2A05A2D2D0C4834003AFF34 /* MathLogicWorker.swift */,
+				A2A05A382D0DCDBD003AFF34 /* LocalStorageSaveWorker.swift */,
+				A2D0E3132D0F30ED006C9107 /* FirebaseSaveScoreWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		A2A05A332D0DC532003AFF34 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A2A05A342D0DC95B003AFF34 /* PlayerInfo.swift */,
+				A2A05A362D0DC99C003AFF34 /* UserDefaultsStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		A2A05A3A2D0DD3C9003AFF34 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E3062D0DEA7F006C9107 /* FirebaseAccountWorker.swift */,
+				A2D0E3082D0DEB4F006C9107 /* UserDataStruct.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		A2A05A3B2D0DD3D0003AFF34 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E3172D0F669C006C9107 /* LocalStorageFetchWorker.swift */,
+				A2D0E3192D0F6B89006C9107 /* LocalStorageDeleteWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		A2A5B1712D09FB200058FD0C = {
+			isa = PBXGroup;
+			children = (
+				A2A5B17C2D09FB200058FD0C /* QuickMathApp */,
+				A2A5B17B2D09FB200058FD0C /* Products */,
+				A2D0E2FB2D0DE568006C9107 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2A5B17B2D09FB200058FD0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2A5B17A2D09FB200058FD0C /* QuickMathApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2A5B17C2D09FB200058FD0C /* QuickMathApp */ = {
+			isa = PBXGroup;
+			children = (
+				A219CCD12D0B072F008482FE /* Scenes */,
+				A219CCCB2D0B0517008482FE /* Supporting */,
+			);
+			path = QuickMathApp;
+			sourceTree = "<group>";
+		};
+		A2D0E2FB2D0DE568006C9107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2D0E3102D0F2D97006C9107 /* Leaderboards */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E3112D0F2E0F006C9107 /* LeaderboardsChooseViewController.swift */,
+				A2D0E31B2D0F7E05006C9107 /* GlobalLeaderboards */,
+				A219CCDA2D0B07C9008482FE /* LocalLeaderboards */,
+			);
+			path = Leaderboards;
+			sourceTree = "<group>";
+		};
+		A2D0E31B2D0F7E05006C9107 /* GlobalLeaderboards */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E31C2D0F9156006C9107 /* GlobalViewController.swift */,
+				A2D0E31E2D0F9168006C9107 /* GlobalInteractor.swift */,
+				A2D0E3202D0F922E006C9107 /* GlobalPresenter.swift */,
+				A2D0E3222D0F9244006C9107 /* GlobalConfigurator.swift */,
+				A2D0E3242D0F9259006C9107 /* GlobalCell.swift */,
+				A2D0E3292D0F9C92006C9107 /* GlobalModel.swift */,
+				A2D0E3262D0F9264006C9107 /* Workers */,
+			);
+			path = GlobalLeaderboards;
+			sourceTree = "<group>";
+		};
+		A2D0E3262D0F9264006C9107 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E3272D0F9274006C9107 /* FirebaseFetchWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2A5B1792D09FB200058FD0C /* QuickMathApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A5B18E2D09FB210058FD0C /* Build configuration list for PBXNativeTarget "QuickMathApp" */;
+			buildPhases = (
+				A2A5B1762D09FB200058FD0C /* Sources */,
+				A2A5B1772D09FB200058FD0C /* Frameworks */,
+				A2A5B1782D09FB200058FD0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickMathApp;
+			packageProductDependencies = (
+				A2D0E2FC2D0DE568006C9107 /* FirebaseAuth */,
+				A2D0E2FE2D0DE568006C9107 /* FirebaseCore */,
+				A2D0E3002D0DE568006C9107 /* FirebaseDatabase */,
+				A2D0E3022D0DE568006C9107 /* FirebaseFirestore */,
+				A2D0E3042D0DE568006C9107 /* FirebaseStorage */,
+			);
+			productName = QuickMathApp;
+			productReference = A2A5B17A2D09FB200058FD0C /* QuickMathApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2A5B1722D09FB200058FD0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A2A5B1792D09FB200058FD0C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A2A5B1752D09FB200058FD0C /* Build configuration list for PBXProject "QuickMathApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2A5B1712D09FB200058FD0C;
+			packageReferences = (
+				A2D0E2FA2D0DE4D4006C9107 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A2A5B17B2D09FB200058FD0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2A5B1792D09FB200058FD0C /* QuickMathApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2A5B1782D09FB200058FD0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A5B1872D09FB210058FD0C /* Assets.xcassets in Resources */,
+				A2D0E2F92D0DE453006C9107 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2A5B1762D09FB200058FD0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A05A1B2D0B40C9003AFF34 /* GameViewController.swift in Sources */,
+				A219CCE22D0B0904008482FE /* AuthPresenter.swift in Sources */,
+				A2D0E30B2D0DFAE6006C9107 /* AuthModels.swift in Sources */,
+				A2A05A272D0B44CD003AFF34 /* KeyboardButton.swift in Sources */,
+				A2D0E3252D0F9259006C9107 /* GlobalCell.swift in Sources */,
+				A2A05A122D0B15FD003AFF34 /* RegularButton.swift in Sources */,
+				A2A05A2E2D0C4834003AFF34 /* MathLogicWorker.swift in Sources */,
+				A2A05A252D0B43E8003AFF34 /* CustomKeyboard.swift in Sources */,
+				A219CCEE2D0B09BA008482FE /* LocalConfigurator.swift in Sources */,
+				A2D0E3122D0F2E0F006C9107 /* LeaderboardsChooseViewController.swift in Sources */,
+				A2D0E31A2D0F6B89006C9107 /* LocalStorageDeleteWorker.swift in Sources */,
+				A2D0E3092D0DEB4F006C9107 /* UserDataStruct.swift in Sources */,
+				A219CCEA2D0B0995008482FE /* LocalInteractor.swift in Sources */,
+				A2D0E3142D0F30ED006C9107 /* FirebaseSaveScoreWorker.swift in Sources */,
+				A2D0E31D2D0F9156006C9107 /* GlobalViewController.swift in Sources */,
+				A219CCCE2D0B062F008482FE /* MainMenuViewController.swift in Sources */,
+				A2D0E31F2D0F9168006C9107 /* GlobalInteractor.swift in Sources */,
+				A2A05A292D0B4A45003AFF34 /* Protocols.swift in Sources */,
+				A2A05A392D0DCDBD003AFF34 /* LocalStorageSaveWorker.swift in Sources */,
+				A219CCEC2D0B09A7008482FE /* LocalPresenter.swift in Sources */,
+				A219CCDE2D0B08CD008482FE /* AuthViewController.swift in Sources */,
+				A2A05A142D0B1C90003AFF34 /* RGBColors.swift in Sources */,
+				A2A05A1F2D0B4102003AFF34 /* GamePresenter.swift in Sources */,
+				A2A05A232D0B4134003AFF34 /* GameConfigurator.swift in Sources */,
+				A2D0E3182D0F669C006C9107 /* LocalStorageFetchWorker.swift in Sources */,
+				A2D0E3162D0F6203006C9107 /* LocalCell.swift in Sources */,
+				A2A05A1D2D0B40F3003AFF34 /* GameInteractor.swift in Sources */,
+				A219CCE42D0B091D008482FE /* AuthConfigurator.swift in Sources */,
+				A2D0E30D2D0F1AAB006C9107 /* UserSession.swift in Sources */,
+				A2D0E3232D0F9244006C9107 /* GlobalConfigurator.swift in Sources */,
+				A2D0E3072D0DEA7F006C9107 /* FirebaseAccountWorker.swift in Sources */,
+				A2A05A352D0DC95B003AFF34 /* PlayerInfo.swift in Sources */,
+				A219CCE02D0B08F4008482FE /* AuthInteractor.swift in Sources */,
+				A2A5B17E2D09FB200058FD0C /* AppDelegate.swift in Sources */,
+				A2A5B1802D09FB200058FD0C /* SceneDelegate.swift in Sources */,
+				A219CCE82D0B0953008482FE /* LocalViewController.swift in Sources */,
+				A2A05A322D0DBF4D003AFF34 /* CustomTextField.swift in Sources */,
+				A2A05A372D0DC99C003AFF34 /* UserDefaultsStorage.swift in Sources */,
+				A2D0E32A2D0F9C92006C9107 /* GlobalModel.swift in Sources */,
+				A2D0E3282D0F9274006C9107 /* FirebaseFetchWorker.swift in Sources */,
+				A2A05A2B2D0C4730003AFF34 /* GameModels.swift in Sources */,
+				A2D0E3212D0F922E006C9107 /* GlobalPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A2A5B18C2D09FB210058FD0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2A5B18D2D09FB210058FD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2A5B18F2D09FB210058FD0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickMathApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yepcock.QuickMathApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2A5B1902D09FB210058FD0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickMathApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yepcock.QuickMathApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2A5B1752D09FB200058FD0C /* Build configuration list for PBXProject "QuickMathApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A5B18C2D09FB210058FD0C /* Debug */,
+				A2A5B18D2D09FB210058FD0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A5B18E2D09FB210058FD0C /* Build configuration list for PBXNativeTarget "QuickMathApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A5B18F2D09FB210058FD0C /* Debug */,
+				A2A5B1902D09FB210058FD0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2D0E2FA2D0DE4D4006C9107 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2D0E2FC2D0DE568006C9107 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2D0E2FA2D0DE4D4006C9107 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A2D0E2FE2D0DE568006C9107 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2D0E2FA2D0DE4D4006C9107 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		A2D0E3002D0DE568006C9107 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2D0E2FA2D0DE4D4006C9107 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		A2D0E3022D0DE568006C9107 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2D0E2FA2D0DE4D4006C9107 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A2D0E3042D0DE568006C9107 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2D0E2FA2D0DE4D4006C9107 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A2A5B1722D09FB200058FD0C /* Project object */;
+}
