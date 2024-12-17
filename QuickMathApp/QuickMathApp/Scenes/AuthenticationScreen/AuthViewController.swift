@@ -116,6 +116,7 @@ final class AuthViewController: UIViewController {
         
         setConstraints()
         componentsSetup()
+        setupGestureRecognizer()
     }
     
     private func setConstraints() {
@@ -156,12 +157,21 @@ final class AuthViewController: UIViewController {
         authOptionsButton.addTarget(self, action: #selector(switchAuthInterface), for: .touchUpInside)
     }
     
+    private func setupGestureRecognizer() {
+        let tapGestureRecongnizer = UITapGestureRecognizer(target: self, action: #selector(stopEditing))
+        view.addGestureRecognizer(tapGestureRecongnizer)
+    }
+    
     func displaySuccess(message: String) {
         displayLabel.text = message
     }
     
     func displayError(message: String) {
         displayLabel.text = message
+    }
+    
+    @objc private func stopEditing() {
+        view.endEditing(true)
     }
     
     @objc private func createButtonTapped() {
