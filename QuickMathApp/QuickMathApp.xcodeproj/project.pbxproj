@@ -34,7 +34,6 @@
 		A2A5B17E2D09FB200058FD0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5B17D2D09FB200058FD0C /* AppDelegate.swift */; };
 		A2A5B1802D09FB200058FD0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5B17F2D09FB200058FD0C /* SceneDelegate.swift */; };
 		A2A5B1872D09FB210058FD0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A5B1862D09FB210058FD0C /* Assets.xcassets */; };
-		A2D0E2F92D0DE453006C9107 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2D0E2F82D0DE453006C9107 /* GoogleService-Info.plist */; };
 		A2D0E2FD2D0DE568006C9107 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A2D0E2FC2D0DE568006C9107 /* FirebaseAuth */; };
 		A2D0E2FF2D0DE568006C9107 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A2D0E2FE2D0DE568006C9107 /* FirebaseCore */; };
 		A2D0E3012D0DE568006C9107 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A2D0E3002D0DE568006C9107 /* FirebaseDatabase */; };
@@ -56,6 +55,7 @@
 		A2D0E3252D0F9259006C9107 /* GlobalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3242D0F9259006C9107 /* GlobalCell.swift */; };
 		A2D0E3282D0F9274006C9107 /* FirebaseFetchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3272D0F9274006C9107 /* FirebaseFetchWorker.swift */; };
 		A2D0E32A2D0F9C92006C9107 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E3292D0F9C92006C9107 /* GlobalModel.swift */; };
+		A2F170B62D10F948004FB986 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2F170B52D10F948004FB986 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,7 +88,6 @@
 		A2A5B17F2D09FB200058FD0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A2A5B1862D09FB210058FD0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2A5B18B2D09FB210058FD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2D0E2F82D0DE453006C9107 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2D0E3062D0DEA7F006C9107 /* FirebaseAccountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAccountWorker.swift; sourceTree = "<group>"; };
 		A2D0E3082D0DEB4F006C9107 /* UserDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStruct.swift; sourceTree = "<group>"; };
 		A2D0E30A2D0DFAE6006C9107 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		A2D0E3242D0F9259006C9107 /* GlobalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCell.swift; sourceTree = "<group>"; };
 		A2D0E3272D0F9274006C9107 /* FirebaseFetchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFetchWorker.swift; sourceTree = "<group>"; };
 		A2D0E3292D0F9C92006C9107 /* GlobalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalModel.swift; sourceTree = "<group>"; };
+		A2F170B52D10F948004FB986 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 				A2A05A132D0B1C90003AFF34 /* RGBColors.swift */,
 				A2A5B17F2D09FB200058FD0C /* SceneDelegate.swift */,
 				A2A5B17D2D09FB200058FD0C /* AppDelegate.swift */,
-				A2D0E2F82D0DE453006C9107 /* GoogleService-Info.plist */,
+				A2F170B52D10F948004FB986 /* GoogleService-Info.plist */,
 				A2A5B18B2D09FB210058FD0C /* Info.plist */,
 				A2A5B1862D09FB210058FD0C /* Assets.xcassets */,
 			);
@@ -380,7 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A5B1872D09FB210058FD0C /* Assets.xcassets in Resources */,
-				A2D0E2F92D0DE453006C9107 /* GoogleService-Info.plist in Resources */,
+				A2F170B62D10F948004FB986 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
