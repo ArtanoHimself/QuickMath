@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error)
             }
         }
-        
         return true
     }
 

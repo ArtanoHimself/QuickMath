@@ -14,8 +14,8 @@ final class GlobalInteractor {
                 
             case .success(let firebasePlayers):
                 self.globalPresenter?.presentPlayers(players: firebasePlayers)
-            case .failure(_):
-                print("Error")
+            case .failure(let error):
+                self.globalPresenter?.presentError(error: error.localizedDescription)
             }
         }
     }

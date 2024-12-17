@@ -57,6 +57,7 @@ extension LocalViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LocalCell", for: indexPath) as? LocalCell
+        cell?.selectionStyle = .none
         let playerInfo = playerModels[indexPath.row]
         cell?.playerInfoLabel.text = "\(playerInfo.nickname) - \(playerInfo.score)"
         return cell ?? UITableViewCell()
@@ -72,7 +73,6 @@ extension LocalViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         deleteAction.image = UIImage(systemName: "trash")
-    
         
         let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
         return configuration

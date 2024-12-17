@@ -8,13 +8,13 @@ final class AuthViewController: UIViewController {
     private var isToggled = false
     
     enum Paddings {
-        static let authOptionsButtonCenterYAnchor: CGFloat = -300
+        static let authOptionsButtonCenterYAnchor: CGFloat = 70
         static let loginLabelFont: CGFloat = 35
         static let stackViewSpacing: CGFloat = 20
-        static let loginLabelCenterYConstant: CGFloat = -250
+        static let loginLabelCenterYConstant: CGFloat = -300
         static let displayLabelLeadingConstant: CGFloat = 12
         static let displayLabelTrailingConstant: CGFloat = -12
-        static let stackViewCenterYConstant: CGFloat = -30
+        static let stackViewCenterYConstant: CGFloat = -150
     }
     
     private var authOptionsButton: UIButton = {
@@ -111,6 +111,8 @@ final class AuthViewController: UIViewController {
         view.addSubview(authLabel)
         view.addSubview(displayLabel)
         view.addSubview(stackView)
+        view.addSubview(loginButton)
+        view.addSubview(createButton)
         
         setConstraints()
         componentsSetup()
@@ -134,7 +136,13 @@ final class AuthViewController: UIViewController {
             
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant:
-                                                Paddings.stackViewCenterYConstant)
+                                                Paddings.stackViewCenterYConstant),
+            
+            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            loginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            
+            createButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            createButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
     
@@ -142,8 +150,6 @@ final class AuthViewController: UIViewController {
         stackView.addArrangedSubview(emailField)
         stackView.addArrangedSubview(passwordField)
         stackView.addArrangedSubview(nicknameField)
-        stackView.addArrangedSubview(loginButton)
-        stackView.addArrangedSubview(createButton)
         
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         createButton.addTarget(self, action: #selector(createButtonTapped), for: .touchUpInside)
@@ -159,6 +165,7 @@ final class AuthViewController: UIViewController {
     }
     
     @objc private func createButtonTapped() {
+        displayLabel.text = "Wait, please"
         
         guard let email = emailField.text,
               let password = passwordField.text,
@@ -173,6 +180,8 @@ final class AuthViewController: UIViewController {
     }
     
     @objc private func loginButtonTapped() {
+        displayLabel.text = "Wait, please"
+        
         guard let email = emailField.text,
               let password = passwordField.text,
               let nickname = nicknameField.text else { return }
@@ -188,16 +197,22 @@ final class AuthViewController: UIViewController {
     @objc private func switchAuthInterface() {
         isToggled.toggle()
         
-        if isToggled {
-            authOptionsButton.setTitle("Have an account? Log in.", for: .normal)
-            createButton.isHidden = false
-            nicknameField.isHidden = false
-            loginButton.isHidden = true
-        } else {
-            authOptionsButton.setTitle("Create an account.", for: .normal)
-            createButton.isHidden = true
-            nicknameField.isHidden = true
-            loginButton.isHidden = false
+        UIView.animate(withDuration: 0.3) {
+            
+            let isCreatingAccount = self.isToggled
+            
+            self.authOptionsButton.setTitle(isCreatingAccount ? "Have an account? Log in." : "Create an account.", for: .normal)
+            
+            self.createButton.isHidden = !isCreatingAccount
+            self.nicknameField.isHidden = !isCreatingAccount
+            self.loginButton.isHidden = isCreatingAccount
+            
+            self.createButton.alpha = isCreatingAccount ? 1 : 0
+            self.nicknameField.alpha = isCreatingAccount ? 1 : 0
+            self.loginButton.alpha = isCreatingAccount ? 0 : 1
+            
+            self.loginButton.isHidden = false
+            self.createButton.isHidden = false
         }
     }
 }
