@@ -9,36 +9,54 @@ class FirebaseAccountWorker {
     private let database = Firestore.firestore()
     
     func createNewUser(user: UserDataStruct, completion: @escaping (Result<Bool, Error>) -> Void) {
-        Auth.auth().createUser(withEmail: user.email, password: user.password) { [weak self] result, error in
-            
-            guard let self = self else { return }
+        
+        self.database.collection("Users").whereField("nickname", isEqualTo: user.nickname).getDocuments { snapshot, error in
             
             if let error = error {
                 completion(.failure(error))
                 return
             }
             
-            guard let firebaseUser = result?.user else {
-                let customError = NSError(domain: AuthErrorDomain,
-                                          code: -1,
-                                          userInfo: [NSLocalizedDescriptionKey: "User creation failed without an error"])
+            if let documents = snapshot?.documents, !documents.isEmpty {
+                let customError = NSError(domain: "FireBaseAuth", code: -1,
+                                          userInfo: [NSLocalizedDescriptionKey: "Nickname is already taken."])
+                
                 completion(.failure(customError))
                 return
             }
             
-            self.database.collection("Users").document(firebaseUser.uid).setData([
-                "nickname": user.nickname
-            ]) { error in
+            Auth.auth().createUser(withEmail: user.email, password: user.password) { [weak self] result, error in
+                guard let self = self else { return }
+                
                 if let error = error {
                     completion(.failure(error))
                     return
-                } else {
-                    firebaseUser.sendEmailVerification()
-                    completion(.success(true))
+                }
+                
+                guard let firebaseUser = result?.user else {
+                    let customError = NSError(domain: AuthErrorDomain,
+                                              code: -1,
+                                              userInfo: [NSLocalizedDescriptionKey: "User creation failed without an error"])
+                    
+                    completion(.failure(customError))
+                    return
+                }
+                
+                self.database.collection("Users").document(firebaseUser.uid).setData([
+                    "nickname": user.nickname
+                ]) { error in
+                    if let error = error {
+                        completion(.failure(error))
+                        return
+                    } else {
+                        firebaseUser.sendEmailVerification()
+                        completion(.success(true))
+                    }
                 }
             }
         }
     }
+    
     
     func signIn(user: UserDataStruct, completion: @escaping (Result<Bool, Error>) -> Void) {
         signOut()
@@ -103,8 +121,6 @@ class FirebaseAccountWorker {
         }
     }
 }
-
-
 
 enum SignInError: Error {
     case invalidUser

@@ -10,5 +10,7 @@ final class GlobalPresenter {
         globalViewController?.updateUI(with: sortedPlayers)
     }
     
-    
+    func presentError(error: String) {
+        globalViewController?.displayError(error: error)
+    }
 }

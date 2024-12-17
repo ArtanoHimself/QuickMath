@@ -39,7 +39,7 @@ final class MainMenuViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
-        label.text = "Version 1.0"
+        label.text = "Version 1.1"
         return label
     }()
 
@@ -53,7 +53,6 @@ final class MainMenuViewController: UIViewController {
         view.addSubview(gameLabel)
         view.addSubview(stackView)
         view.addSubview(versionLabel)
-        
         
         setConstraints()
         componentsSetup()
